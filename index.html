@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+<body>
+<header>
+    <div class="header-div">
+        <h1>Curriculum vitae</h1> 
+    </div>
+</header>
+<main>
+    <div class="main-div">
+        <div>
+            <h2 class="h2-first">Purpose</h2>
+            <hr>
+            <p> Acquiring practical and theoretical skills in the IT sphere for further employment.</p>
+            <h2>Work experience</h2>
+            <hr>
+            <p> None.</p>
+            <p>But I am interested in learning English and modern web technologies.</p>
+            <h2>Education</h2>
+            <hr>
+            <span> Secondary specialized (software technician).</span><br>
+            <span>I studied for 4 years at the Orsha’s College of Vitebsk State University named after</span><br>
+            <span>P.M. Masherov on the specialty “Information Technology Software”.</span><br>
+            <br>
+            <span>Now I am a student of Vitebsk State University named after P.M.Masherov.</span><br>
+            <span>I am studying in the second year of the specialty “Information Technology Software”.</span><br>
+            <h2>Code example</h2>
+            <hr>
+            <pre>
+                <code>
+static int[] RandomPermutation(int[] a)
+{
+    Random random = new Random();
+    var n = a.Length;
+    while (n > 1)
+    {
+        n--;
+        var i = random.Next(n + 1);
+        var temp = a[i];
+        a[i] = a[n];
+        a[n] = temp;
+    }
+    return a;
+}
+                </code>
+            </pre>
+        </div>
+    </div>
+</main>
+<aside>
+    <div class="aside-div">
+        <div>   
+            <img src="/img/profile.jpg">    
+            <h2>Personal info</h2>
+            <hr>
+            <h3>Name</h3>
+            <p> Kisel Dzmitry</p>
+            <h3>Telephone</h3>
+            <p> +375(29) 211-15-11</p>
+            <h3>Email</h3>
+            <p> gix73@yandex.ru</p>
+        </div>
+        <div>
+            <h2>Skills</h2>
+            <hr>
+            <p>Basic knowledge of C++ and C#. I used the Visual Studio 2017 IDE.</p>
+        </div>
+    </div>
+</aside>
+<footer>
+</footer>
+</body>
+</html>
