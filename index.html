@@ -8,9 +8,9 @@
 </head>
 <body>
 <header>
-    <div class="header-div">
+    <nav class="header-div">
         <h1>Curriculum vitae</h1> 
-    </div>
+    </nav>
 </header>
 <main>
     <div class="main-div">
@@ -55,25 +55,44 @@ static int[] RandomPermutation(int[] a)
 </main>
 <aside>
     <div class="aside-div">
-        <div>   
-            <img src="img/profile.jpg" alt="Avatar">    
-            <h2>Personal info</h2>
-            <hr>
-            <h3>Name</h3>
-            <p> Kisel Dzmitry</p>
-            <h3>Telephone</h3>
-            <p> +375(29) 211-15-11</p>
-            <h3>Email</h3>
-            <p> gix73@yandex.ru</p>
-        </div>
+        <section> 
+            <figure>
+                <img src="img/profile.jpg" alt="avatar">
+            </figure> 
+            <ul>
+                <li><h2>Personal info</h2></li>
+                <li><h3>Name</h3></li>
+                <li><p> Kisel Dzmitry</p></li>
+                <li><h3>Telephone</h3></li>
+                <li><p> +375(29) 211-15-11</p></li>
+                <li><h3>Email</h3></li>
+                <li class="a-marg"><a href="mailto:gix73@yandex.ru"> gix73@yandex.ru</a></li>
+            </ul>     
+            <hr>     
+        </section>
         <div>
             <h2>Skills</h2>
             <hr>
-            <p>Basic knowledge of C++ and C#. I used the Visual Studio 2017 IDE.</p>
+            <ul>
+                <li>Basic knowledge of: 
+                    <ul class="li-marg">
+                        <li>C++;</li>
+                        <li>C#;</li>
+                    </ul>
+                </li>
+                <li>Learning JS for one month;</li>
+                <li>English level: A2.</li>
+            </ul>
+            <p></p>
         </div>
     </div>
 </aside>
 <footer>
+    <div>
+        <a href="https://rs.school/js/" target="_blank">
+        <img class="rs-logo" src="img/rs_school_js.svg" alt="Logo">
+        </a>
+    </div>
 </footer>
 </body>
 </html>
